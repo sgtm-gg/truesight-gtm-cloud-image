@@ -1,6 +1,6 @@
 /**
  * URL-Safe XOR Base64 Cipher & Multi-Format Container ID Parser
- * Canonical implementation for @sgtm-gg/open-sgtm-runtime
+ * Canonical implementation for @sgtm-gg/truesight-gtm-cloud-image
  * Zero external dependencies: pure TypeScript / Node.js & browser portable.
  */
 

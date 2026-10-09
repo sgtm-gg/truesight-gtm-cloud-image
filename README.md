@@ -4,7 +4,7 @@
 > **Canonical Image**: `ghcr.io/sgtm-gg/truesight-gtm-cloud-image:stable`  
 > **Base Image**: `gcr.io/cloud-tagging-10302018/gtm-cloud-image:stable` (Google's official sGTM runtime)  
 > **Version**: 1.0.0  
-> **Classification**: Public / Auditable Open Runtime Architecture  
+> **Classification**: Public / Auditable TrueSight Container Architecture  
 > **Compliance Profile**: GDPR (Art. 25 & 32), SOC 2 Type II (Trust Services Criteria), HIPAA Safe Harbor (45 CFR § 164.514(b))  
 > **License**: Apache-2.0  
 
@@ -134,20 +134,30 @@ The TrueSight Runtime container enforces zero Personally Identifiable Informatio
 
 ## 6. Verification & Auditing Commands
 
-### Standalone TypeScript Compilation
+### Standalone Repository Commands (from cloned repository root)
 ```bash
+# Install development dependencies
+npm install
+
+# Validate TypeScript compilation
+npm run build
+# or: npx tsc --noEmit
+
+# Execute standalone test suite (22 unit assertions)
+npm test
+# or: npx tsx tests/test-runtime.ts
+```
+*Expected output: Exits with code 0 (zero errors, 100% assertions pass).*
+
+### Monorepo Integration Commands (from sgtm-manager root)
+```bash
+# Standalone TypeScript check
 npx tsc --project packages/open-sgtm-runtime/tsconfig.json --noEmit
-```
-*Expected output: Exits with code 0 (zero errors).*
 
-### Standalone Test Suite Execution
-```bash
+# Standalone test execution
 npx tsx packages/open-sgtm-runtime/tests/test-runtime.ts
-```
-*Expected output: 100% of assertion groups pass in complete isolation.*
 
-### Zero-Leakage Static Scan
-```bash
+# CI drift prevention & zero-leakage AST scan (19 gate assertions)
 npm run powerups:verify
 ```
 *Verifies 0 imports of `@/db`, `@/auth`, `next-auth`, `drizzle-orm`, or internal SaaS routes.*

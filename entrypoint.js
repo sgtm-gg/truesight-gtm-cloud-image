@@ -1,5 +1,5 @@
 /**
- * Open sGTM Container Runtime — Process Supervisor
+ * TrueSight sGTM Container Runtime — Process Supervisor
  * Pure Node.js process supervisor managing Cloud Run container lifecycle.
  * Spawns sGTM upstream on port 8081 and reverse proxy on 8080.
  * Injects telemetry interceptor into sGTM upstream NODE_OPTIONS when enabled.

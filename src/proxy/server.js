@@ -1,5 +1,5 @@
 /**
- * Open sGTM Reverse Proxy & AdBlock Shield
+ * TrueSight sGTM Reverse Proxy & AdBlock Shield
  * Canonical pure Node.js reverse proxy with zero external dependencies.
  * Handles /healthz, /fps/loader.js, /fps/asset, /fps/gtm.js, /metrics/t/:id XOR ingress,
  * Service Worker (*\/sw.js), and legacy aliases (/icefall/*, /sherpa/t/*).
@@ -808,7 +808,7 @@ if (require.main === module) {
   startIngressTimer();
   startHeartbeatTimer();
   server.listen(CONFIG.PORT, '0.0.0.0', () => {
-    console.log(`[Open sGTM Proxy] Listening on port ${CONFIG.PORT} -> Upstream: ${CONFIG.SGTM_UPSTREAM_URL}`);
+    console.log(`[TrueSight Proxy] Listening on port ${CONFIG.PORT} -> Upstream: ${CONFIG.SGTM_UPSTREAM_URL}`);
   });
 }
 

@@ -1,6 +1,6 @@
 /**
  * TrueSight Telemetry & Outbound Interceptor Hook
- * Canonical implementation for @sgtm-gg/open-sgtm-runtime
+ * Canonical implementation for @sgtm-gg/truesight-gtm-cloud-image
  * Zero-touch Node.js outbound hook (http.request, https.request, global.fetch)
  * Intercepts vendor API dispatches for all 7 platforms:
  * 1. Meta CAPI

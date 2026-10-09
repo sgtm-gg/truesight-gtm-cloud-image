@@ -1,6 +1,6 @@
 /**
  * Downstream Error Diagnostics & Rolling LRU Ring Buffer
- * Canonical implementation for @sgtm-gg/open-sgtm-runtime
+ * Canonical implementation for @sgtm-gg/truesight-gtm-cloud-image
  * Captures downstream HTTP 4xx/5xx rejections and vendor error messages.
  * Enforces a rolling LRU ring buffer strictly storing the latest 5 distinct errors
  * per (serverId, tagName, eventName) tuple with error signature deduplication.

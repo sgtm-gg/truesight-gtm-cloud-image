@@ -1,6 +1,6 @@
 /**
  * Client-Side Tag Loader & Integration Snippet Generators
- * Canonical implementation for @sgtm-gg/open-sgtm-runtime
+ * Canonical implementation for @sgtm-gg/truesight-gtm-cloud-image
  * Supports both Obfuscated Shield (encrypted ingress) and Declarative transport_url modes.
  */
 
