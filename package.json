@@ -1,0 +1,38 @@
+{
+  "name": "@sgtm-gg/truesight-gtm-cloud-image",
+  "version": "1.0.0",
+  "description": "Production Google Server-Side Tag Manager runtime container with AdBlock Shield and TrueSight zero-tag observability",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgtm-gg/truesight-gtm-cloud-image.git"
+  },
+  "homepage": "https://github.com/sgtm-gg/truesight-gtm-cloud-image#readme",
+  "bugs": {
+    "url": "https://github.com/sgtm-gg/truesight-gtm-cloud-image/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx tests/test-runtime.ts"
+  },
+  "keywords": [
+    "sgtm",
+    "gtm",
+    "adblock",
+    "telemetry",
+    "privacy",
+    "zero-pii",
+    "open-source",
+    "cloud-run",
+    "truesight",
+    "container-image"
+  ],
+  "author": "sgtm.gg Infrastructure Team <security@sgtm.gg>",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
